@@ -1,40 +1,40 @@
-# Optimizing Black Friday Sales Forecasts
-![alt text](https://ordorite.com/wp-content/uploads/2019/11/Black-friday-sales_image_blog-Nov-2019.jpg "Black Friday Sales Prediction")
+# Spotify-analysis-dashboard
+[Link to the dashboard](https://app.powerbi.com/view?r=eyJrIjoiNjgxMTFlYjctMDRmZi00NzliLTgyN2EtY2NiZGU0ZDQxODU2IiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9&pageName=ReportSection)
 
-## Table Of Contents
-  - [Project Introduction](#project-introduction)
-  - [Dataset Description](#dataset-description)
-  - [EDA](#eda)
-  - [Data Preprocessing](#data-preparation)
-  - [Modeling Phase](#modeling-phase)
-  - [Evaluation Metric](#evaluation-metric)
-  - [Conclusion](#conclusion)
+[Link to the dataset](https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023/data)
 
-### Project Introduction
-Black Friday is an informal name for the Friday following Thanksgiving Day in the United States, which is celebrated on the fourth Thursday of November. The day after Thanksgiving has been regarded as the beginning of the United States Christmas shopping season since 1952, although the term "Black Friday" did not become widely used until more recent decades. Many stores offer highly promoted sales on Black Friday and open very early, such as at midnight, or may even start their sales at some time on Thanksgiving. The major challenge for a Retail store or eCommerce business is to choose product price such that they get maximum profit at the end of the sales. Our project deals with determining the product prices based on the historical retail store sales data. After generating the predictions, our model will help the retail store to decide the price of the products to earn more profits.
+***This project is a PowerBI dashboard to showcase different KPIs about the most Spotify streamed songs for 2023***
 
-### Dataset Description
-The dataset is acquired from an online data analytics hackathon hosted by Analytics Vidhya. The data contained features like age, gender, marital status, categories of products purchased, city demographics, purchase amount etc. The data consists of 12 columns and 537577 records. Our model will be predicting the purchase amount of the products.
+***Here are the different measures that I created for this project***
 
-###  EDA:
-Below are the observations which we have made from the data visualization done as part of the Data Understanding process.
-* Approximately, 75% of the number of purchases are made by Male users and rest of the 25% is done by female users. This tells us the Male consumers are the major contributors to the number of sales for the retail store.On average the male gender spends more money on purchase contrary to female, and it is possible to also observe this trend by adding the total value of purchase.
-* When we combined Purchase and Marital_Status for analysis, we came to know that Single Men spend the most during the Black Friday. It also tells that Men tend to spend less once they are married. It maybe because of the added responsibilities.
-* For Age feature, we observed the consumers who belong to the age group 25-40 tend to spend the most.
-* There is an interesting column Stay_In_Current_City_Years, after analyzing this column we came to know the people who have spent 1 year in the city tend to spend the most. This is understandable as, people who have spent more than 4 years in the city are generally well settled and are less interested in buying new things as compared to the people new to the city, who tend to buy more.
-* When examining which city the product was purchased to our surprise, even though the city B is majorly responsible for the overall sales income, but when it comes to the above product, it majorly purchased in the city C.
+* Date :
+![image](https://github.com/imenbkr/Power-Bi-dashboards/assets/104791884/e4c6cfd6-679a-4528-a20e-da21ed2a9323)
 
-### Data Preparation
-* Used LabelEncoder for encoding the categorical columns like Age, Gender and City_Category
-* Used get_dummies form Pandas package for converting categorical variable State_In_Current_Years into dummy/indicator variables.
-* Filled the missing values in the Product_Category_2 and Product_Category_3
+* Average Streams per year :
+![image](https://github.com/imenbkr/Power-Bi-dashboards/assets/104791884/f1583893-e316-4412-b27e-4368628c8851)
 
-### Modeling Phase
-- Splitted dataset into into random train and test subset of ratio 80:20
-- Implemented multiple supervised models such as Linear Regressor, Decision Tree Regressor, Random Forest Regressor.
+* Maximum of streams :
+![image](https://github.com/imenbkr/Power-Bi-dashboards/assets/104791884/db9cce3d-0be6-46ab-af3a-d2be9e0ab2f7)
 
-### Evaluation Metric
-Root Mean Square Error (RMSE) is a standard way to measure the error of a model in predicting quantitative data. It’s the square root of the average of squared differences between prediction and actual observation.
+* Average Percentage of energy in each song :
+![image](https://github.com/imenbkr/Power-Bi-dashboards/assets/104791884/ba6808c2-99ca-4d20-9d2d-76757e680d0e)
 
-### Conclusion
-Implanted multiple supervised models such as Linear Regressor,Decision Tree Regressor, Random Forest Regressor and XGBOOST Regressor. Out of these supervised models, based on the RMSE scores XGBRegressor/XGBOOST Regressor was the best performer with a score of 2879.
+* Ranking Artists by Streams :
+![image](https://github.com/imenbkr/Power-Bi-dashboards/assets/104791884/dc40e172-75c1-4b12-bde5-86ba35a5cc51)
+
+* Number of streams for the top song :
+![image](https://github.com/imenbkr/Power-Bi-dashboards/assets/104791884/cb5f8e0e-e3dd-43fd-840b-31a4bed56ed2)
+
+* Top song streams value VS Average streams per year:
+![image](https://github.com/imenbkr/Power-Bi-dashboards/assets/104791884/cef7f0dc-3b87-4553-a0ce-b0910fb01236)
+![image](https://github.com/imenbkr/Power-Bi-dashboards/assets/104791884/2120e2b9-834e-4db0-8bf4-3e8dc1bc0068)
+
+* Top 10 artists by streams:
+![image](https://github.com/imenbkr/Power-Bi-dashboards/assets/104791884/c15db10a-cd04-490a-9962-be90af8b108d)
+
+* Count Track names:
+![image](https://github.com/imenbkr/Power-Bi-dashboards/assets/104791884/c9175649-d2c6-403e-835e-3c0d9b6b1683)
+
+
+***Dashboard***
+![image](https://github.com/imenbkr/Power-Bi-dashboards/assets/104791884/717f184b-22da-4c80-bc68-85e64ee92e45)
